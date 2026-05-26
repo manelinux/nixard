@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.direnv/
+result
+result-*
+*.nixard
