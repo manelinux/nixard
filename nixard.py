@@ -994,7 +994,13 @@ class NixardApp(App):
         if global_pkgs:
             self.packages_by_scope["System (active)"] = global_pkgs
 
-        homes = [f"/home/{u}" for u in os.listdir("/home")] if os.path.exists("/home") else []
+        homes = []
+        for home_root in ("/home", "/Users"):
+            if os.path.isdir(home_root):
+                try:
+                    homes.extend(os.path.join(home_root, u) for u in os.listdir(home_root))
+                except OSError:
+                    pass
         homes.append("/root")
         for home in homes:
             if os.path.isdir(home):
