@@ -36,7 +36,7 @@
             homepage = "https://github.com/manelinux/nixard";
             license = pkgs.lib.licenses.mit;
             maintainers = [ ];
-            platforms = pkgs.lib.platforms.linux;
+            platforms = pkgs.lib.platforms.unix;
             mainProgram = "nixard";
           };
         };
