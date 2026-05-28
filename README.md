@@ -1,4 +1,4 @@
-# nixard
+# nixard --UPDATED
 
 A powerful terminal UI for exploring NixOS packages, inspecting real dependency closures, auditing system/package presence, and generating ready-to-use Nix configurations.
 
