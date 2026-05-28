@@ -16,8 +16,8 @@ It combines:
 - real closure analysis
 - local store auditing
 - configuration inspection
-- export/history management
-- and direct `.nix` editing
+- UPDATE: export/history management
+- UPDATE: and direct `.nix` editing (backup files automatically previous changes)
 
 …inside a single keyboard-driven interface.
 
